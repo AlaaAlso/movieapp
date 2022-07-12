@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Cinzel Decorative", cursive;
+  font-family: "Righteous", cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navstyle {
+  background-color: #e71a45;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .pstyle {
+   color: #d84190; 
+  color: #6f3f71;
+  color: #e71a45 ;
+} */
+.cardstyle {
+  display: flex;
+   flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.moviestyle {
+  display: flex;
+  background-color: #ffe8a5;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#e71a45;
+  color: white;
+  font-size: small;
+  padding: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+}
+.copyright {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.ftco-animate {
+  margin: 20px;
+}
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.socialmedia h2 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+a :hover {
+  color:  #ffe8a5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

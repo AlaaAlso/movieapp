@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Navvbar from "./Component/Navbar";
+import MoviesData from "./Component/Moviedata";
+import MovieList from "./Component/MovieList";
+import Mianpart from "./Component/Mianpart";
+import Addmovie from "./Component/Addmovie";
+import Footer from "./Component/Footer"
 
-function App() {
+const App = () => {
+  const [value, setValue] = useState(1);
+  const [filterByName, setFilterByName] = useState("");
+  const [movies, setMovies] = useState(MoviesData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navvbar
+        filterByName={filterByName}
+        setFilterByName={setFilterByName}
+        value={value}
+        setValue={setValue}
+      />
+      <Mianpart />
+      <MovieList
+        movies={movies}
+        filterByName={filterByName}
+        value={value}
+        setValue={setValue}
+      />
+      <Addmovie MoviesData={MoviesData} setMovies={setMovies} movies={movies} />
+      <Footer/>
     </div>
   );
-}
+};
 
 export default App;
