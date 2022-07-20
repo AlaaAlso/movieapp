@@ -4,7 +4,9 @@ import Moviecard from "./Moviecard";
 const MovieList = (props) => {
   return (
     <div style={{ backgroundColor: "#ffe8a5" }}>
-      <h1 style={{ textAlign: "center", color: "#e71a45", fontSize: "100px" }}>Movies</h1>
+      <h1 style={{ textAlign: "center", color: "#e71a45", fontSize: "100px" }}>
+        Movies
+      </h1>
       <div className="cardstyle">
         {props.movies
           .filter(

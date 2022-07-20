@@ -2,9 +2,7 @@
   font-family: "Cinzel Decorative", cursive;
   font-family: "Righteous", cursive;
 }
-.navstyle {
-  background-color: #e71a45;
-}
+/* primary color */
 /* .pstyle {
    color: #d84190; 
   color: #6f3f71;
@@ -12,7 +10,7 @@
 } */
 .cardstyle {
   display: flex;
-   flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -20,11 +18,14 @@
   display: flex;
   background-color: #ffe8a5;
 }
+.cardmovie {
+  display: flex;
+}
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color:#e71a45;
+  background-color: #e71a45;
   color: white;
   font-size: small;
   padding: 30px;
@@ -53,12 +54,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .socialmedia h2 {
   color: white;
 }
 a :hover {
-  color:  #ffe8a5;
+  color: #ffe8a5;
 }
-

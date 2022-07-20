@@ -1,25 +1,28 @@
- const MoviesData = [
+const MoviesData = [
   {
     id: Math.random(),
     image:
-      "https://i.pinimg.com/originals/4d/ea/be/4deabeb03554cacdba17995886789005.jpg",
+      "https://i.pinimg.com/originals/2c/03/41/2c034115430890d1b388a324499459ac.jpg",
     rating: 4,
-    name: "Devil's Mile",
+    name: "The Little Mermaid",
     date: "2014",
     type: "Action | Crime",
     description:
       "A relentlessly-paced hybrid of gritty crime thriller and Lovecraftian supernatural horror, The Devil's Mile follows a trio of kidnappers who take an ill-advised detour en route to deliver...",
+    trailer: "https://www.youtube.com/embed/ZGZX5-PAwR8" ,
+   
   },
   {
     id: Math.random(),
     image:
-      "https://static.cinemagia.ro/img/db/movie/00/69/88/once-upon-a-time-in-the-west-549264l.jpg",
+      "https://lumiere-a.akamaihd.net/v1/images/p_luca_21670_3c13c611.jpeg?region=0%2C0%2C540%2C810",
     rating: 5,
-    name: "Once Upon A Time In The west",
+    name: "Luca",
     date: "1968",
     type: "Western",
     description:
       "A mysterious stranger with a harmonica joins forces with a notorious desperado to protect a beautiful widow from a ruthless assassin working for the railroad.",
+    trailer: "https://www.youtube.com/embed/mYfJxlgR2jw",
   },
   // {
   //   id: Math.random(),
@@ -46,25 +49,27 @@
   {
     id: Math.random(),
     image:
-      "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b1330b14202071.5627f4dc23472.jpg",
+      "https://i.pinimg.com/originals/f0/c3/1b/f0c31b77462b76265a7fcd563822ebc9.jpg",
     rating: 3,
-    name: "Little Miss Sunshine",
+    name: "MOANA ",
     date: "2006",
     type: "Comedy | Drama",
     description:
       "A family determined to get their young daughter into the finals of a beauty pageant take a cross-country trip in their VW bus.",
+    trailer: "https://www.youtube.com/embed/LKFuXETZUsI",
   },
   {
     id: Math.random(),
     image:
-      "https://i.pinimg.com/564x/32/49/1c/32491ccd2f4ce577dea8871988c5828c.jpg",
+      "https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg?region=0%2C0%2C540%2C810",
     rating: 5,
-    name: "KILL BILL: VOL. 1",
+    name: "Encanto",
     date: "2003",
     type: "Action",
     description:
       "The lead character, called 'The Bride,' was a member of the Deadly Viper Assassination Squad, led by her lover 'Bill.'The Bride' decided to escape her life as a killer.",
     details: "https://www.imdb.com/title/tt0266697/plotsummary?ref_=tt_stry_pl",
+    trailer: "https://www.youtube.com/embed/CaimKeDcudo",
   },
   // {
   //   id: Math.random(),
@@ -78,4 +83,4 @@
   //     "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
   // },
 ];
-export default MoviesData ;
+export default MoviesData;

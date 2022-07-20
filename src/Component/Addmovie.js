@@ -10,11 +10,12 @@ function Addmovie(props) {
   const [image, setimage] = useState("");
   const [rating, setrating] = useState("");
   const [name, setiname] = useState("");
+  const [description, setdescription] = useState("");
 
-  const addmovieurl = (image, rating, name) => {
+  const addmovieurl = (image, rating, name, description) => {
     props.setMovies([
       ...props.movies,
-      { id: Math.random(), image, rating, name },
+      { id: Math.random(), image, rating, name, description },
     ]);
   };
   return (
@@ -75,7 +76,7 @@ function Addmovie(props) {
               margin: "10px",
             }}
           ></input>
-          <span>name</span>
+          <span>Name</span>
           <input
             style={{
               color: "#e71a45",
@@ -85,14 +86,25 @@ function Addmovie(props) {
             placeholder="name"
           ></input>
           <br></br>
-          <span>rating</span>
+          <span>Rating</span>
           <input
             style={{
               color: "#e71a45",
-              margin: "20px",
+              margin: "6px 0 6px 4px",
+              fontSize: "12px",
             }}
             onChange={(e) => setrating(e.target.value)}
             placeholder="rating"
+          ></input>
+          <span>Description</span>
+          <input
+            style={{
+              color: "#e71a45",
+              margin: "6px 0 7px 0",
+              fontSize: "12px",
+            }}
+            onChange={(e) => setdescription(e.target.value)}
+            placeholder="description"
           ></input>
         </Modal.Body>
         <Modal.Footer
@@ -111,7 +123,10 @@ function Addmovie(props) {
           </Button>
           <Button
             variant="danger"
-            onClick={() => addmovieurl(image, rating, name)}
+            onClick={() => {
+              addmovieurl(image, rating, name);
+              handleClose();
+            }}
             style={{
               margin: "0 60px",
             }}

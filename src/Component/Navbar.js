@@ -13,9 +13,9 @@ const Navvbar = (props) => {
 
   return (
     <div>
-      <Navbar style={{ fontSize: "12px"  }} className="navstyle" >
+      <Navbar style={{ fontSize: "12px" ,  backgroundColor: "#e71a45"   }}  >
         <Container>
-          <Navbar.Brand href="#" style={{ fontSize: "12px"  , color: "#351c32"  }}>
+          <Navbar.Brand href="#" style={{ fontSize: "12px" , color: "#ffffff"  }}>
             popcorn
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -45,7 +45,7 @@ const Navvbar = (props) => {
             <Nav
               className="me-auto"
               navbarScroll
-              style={{ margin: " 0 280px" , color: "#351c32"  }}
+              style={{ margin: " 0 280px"  , color: "#ffffff" }}
             >
               <Nav.Link href="#action1">FREE MOVIES & TV</Nav.Link>
               <Nav.Link href="#action2">FEATURES</Nav.Link>

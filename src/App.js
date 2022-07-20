@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
 import Navvbar from "./Component/Navbar";
 import MoviesData from "./Component/Moviedata";
 import MovieList from "./Component/MovieList";
 import Mianpart from "./Component/Mianpart";
+import Cardmovie from "./Component/Cardmovie";
 import Addmovie from "./Component/Addmovie";
-import Footer from "./Component/Footer"
+import Footer from "./Component/Footer";
+import "./App.css";
 
 const App = () => {
   const [value, setValue] = useState(1);
@@ -20,15 +22,31 @@ const App = () => {
         value={value}
         setValue={setValue}
       />
-      <Mianpart />
-      <MovieList
-        movies={movies}
-        filterByName={filterByName}
-        value={value}
-        setValue={setValue}
-      />
-      <Addmovie MoviesData={MoviesData} setMovies={setMovies} movies={movies} />
-      <Footer/>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {" "}
+              <Mianpart />
+              <MovieList
+                movies={movies}
+                filterByName={filterByName}
+                value={value}
+                setValue={setValue}
+              />
+              <Addmovie
+                MoviesData={MoviesData}
+                setMovies={setMovies}
+                movies={movies}
+              />
+            </>
+          }
+        />
+        <Route path="/movies/:id" element={<Cardmovie />} />
+      </Routes>
+      <Footer />
     </div>
   );
 };
